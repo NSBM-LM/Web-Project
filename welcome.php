@@ -1,3 +1,8 @@
+<?php
+include('session.php');
+
+?>
+
 <html>
 <head>
 <title>lms-nsbm</title>
@@ -25,20 +30,27 @@
 <a href="#"><img id="nsbm" height="200px" width="200px"></a>
 <h1 align="center" style="margin-top:-150px;font-size:40px;color:rgba(2,38,181,.99);font-family:impact">National School Of Business Management</h1>
 <br/>
+<!--
+<h1 style="color:blue;font-family:sans-serif,Times,serif;font-weight:bold;font-size:80px;">NSBM</h1>
+<h2 style="color:blue;font-family:sans-serif,Times,serif;font-weight:normal;font-size:20px;float:left;margin:0 0 0 0;">Learning Management System</h2>
+-->
 
-<p align="right" style="font-family:serif; margin-top:-50px; font-weight:bold; font-variant: small-caps; color:rgb(7,44,169)">you are not logged in.<a class="login" id="log" onmouseover="onmouse2()" onmouseout="mouseout2()" style="text-decoration:none;color:rgb(5,32,122);" href="login.html">(Login)</a></p>
+<?php
+echo '<p align="right" style="font-family:serif; margin-top:-50px; font-weight:bold;color:rgb(7,44,169);font-size: 13px;font-style: italic;">You are logged in as &nbsp'.$_SESSION['login_index'].'&nbsp'.$_SESSION['name_initials'].'<a class="logout" id="log" onmouseover="onmouse2()" onmouseout="mouseout2()" style="text-decoration:none;color:rgb(5,32,122):font-size: 20px;font-style:none;" href="logout.php">(Logout)</a></p>';
+?>
+
 </div>
 <hr id="col2"/>
 <div class="all-buttons">
 <div class="home">
-<a href="nsbm.html" style="text-decoration: none;color: #ffffff;">Home</a>
+<a href="#" style="text-decoration: none;color: #ffffff;">Home</a>
 </div>
 <div class="course">
 <button class="coursebtn">Courses</button>
  <div class="course-content">
-    <a href="school computing.html">SCHOOL OF COMPUTING</a>
-    <a href="school management.html">SCHOOL OF MANAGEMENT</a>
-    <a href="school engineering.html">SCHOOL OF ENGINEERING</a>
+    <a href="#">SCHOOL OF COMPUTING</a>
+    <a href="#">SCHOOL OF MANAGEMENT</a>
+    <a href="#">SCHOOL OF ENGINEERING</a>
  </div>
  </div>
 <div class="facil"><a href="#" style="text-decoration: none;color: white;">Facilities</a></div>
@@ -46,18 +58,25 @@
 <button class="studentbtn">Student</button>
  <div class="student-content">
     <a href="#">SOCIETIES</a>
-    <a href="clubs.html">CLUBS</a>
-    <a href="activities.html">ACTIVITIES</a>
+    <a href="#">CLUBS</a>
+    <a href="#">ACTIVITIES</a>
  </div>
  </div>
 <div class="about"><a href="#" style="text-decoration: none;color: white;">About Us</a></div>
-<div class="sup"><a href="support.html" style="text-decoration: none;color: white;">Support</a><br/></div>
+<div class="sup"><a href="#" style="text-decoration: none;color: white;">Support</a><br/></div>
 </div>
 
 <img id="pic" src="old1.png" onmouseover="onmouse()" width="1024px" height="270px" style="position:absolute; left:280px; top:190px; opacity:0.9; z-index:0; border-style:inset; border-color:rgb(11,100,88); border-radius:4px;"/>
 
 
 
+<!-- <p style="color:blue;float:right;margin-right:800;"> COURSE CATEGORIES </p>
+<div class="body-cat" id="">
+<a href="">SCHOOL OF COMPUTING</a><br/>
+<a href="">SCHOOL OF MANAGEMENT</a><br/>
+<a href="">SCHOOL OF ENGINEERING</a><br/>
+</div>
+-->
 <br/>
 
 <div class="main-menu">
@@ -68,34 +87,34 @@
 <table class="menu" >
 
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=6133" style=" text-decoration:none; color:rgb(9,45,217);">NSBM Research Publications</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">NSBM Research Publications</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=6123" style=" text-decoration:none; color:rgb(9,45,217);">NSBM Quarterly News</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">NSBM Quarterly News</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=5648" style=" text-decoration:none; color:rgb(9,45,217);">Student Handbooks</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Student Handbooks</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=5649" style=" text-decoration:none; color:rgb(9,45,217);">Award Handbooks</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Award Handbooks</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=5650" style=" text-decoration:none; color:rgb(9,45,217);">Regulations</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Regulations</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=5651" style=" text-decoration:none; color:rgb(9,45,217);">Examination Time Tables</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Examination Time Tables</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=5655" style=" text-decoration:none; color:rgb(9,45,217);">Class Time Tables</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Class Time Tables</a><br/>
 </td></tr>
 <tr><td>
 <img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Library Catalog</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="https://shibboleth.plymouth.ac.uk/CookieAuth.dll?GetLogon?curl=Z2FidpZ2FAuthnZ2FRemoteUser&reason=0&formdir=5" style=" text-decoration:none; color:rgb(9,45,217);">Plymouth DLE</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Plymouth DLE</a><br/>
 </td></tr>
 <tr><td>
-<img src="book3.png" width="30px" height="30px"/><a href="http://lms.nsbm.lk/mod/resource/view.php?id=6592" style=" text-decoration:none; color:rgb(9,45,217);">Academic Counselling and Pastoral Care</a><br/>
+<img src="book3.png" width="30px" height="30px"/><a href="" style=" text-decoration:none; color:rgb(9,45,217);">Academic Counselling and Pastoral Care</a><br/>
 </td></tr>
 
 </table>
@@ -110,8 +129,8 @@
 <div class="up">
 <table>
 <form action="login.php" method="post" name="log">
-<tr><td>Index Number<br/>
-<input type="text" class="user" name="index"><br/>
+<tr><td>Username<br/>
+<input type="text" class="user" name="user"><br/>
 </tr></td>
 
 <tr><td>Password<br/>
@@ -125,8 +144,8 @@
 </div>
 
 <div class="new-account">
-<a id="log1" onmouseover="onmouse3()" onmouseout="mouseout3()" style="color: rgba(52,108,239,.95);text-decoration: none" href="create new account.html" style="text-decoration:none;">CREATE NEW ACCOUNT</a><br/>
-<a id="log2" onmouseover="onmouse4()" onmouseout="mouseout4()" style="color: rgba(52,108,239,.95);text-decoration: none" href="lost-password.html" style="text-decoration:none;">LOST PASSWORD?</a>
+<a id="log1" onmouseover="onmouse3()" onmouseout="mouseout3()" style="color: rgba(52,108,239,.95);text-decoration: none" href="" style="text-decoration:none;">CREATE NEW ACCOUNT</a><br/>
+<a id="log2" onmouseover="onmouse4()" onmouseout="mouseout4()" style="color: rgba(52,108,239,.95);text-decoration: none" href="" style="text-decoration:none;">LOST PASSWORD?</a>
 </div>
 
 <div class="footer">
@@ -134,7 +153,6 @@
 <br/>Telephone: +94(11)567 2545|5673535 - Email:info@nsbm.lk</p>
 </div>
 <a href="http://css-validator.org"><img src="validate1.png" alt="css3"></a> <a href="http://validator.w3.org"><img src="validate2.png" alt="html5"></a>
-<p><center>Pages works best on 1600x900 resolution and bit responsive on 1366x768 resolution</center></p>
 </body>
 
 </html>
