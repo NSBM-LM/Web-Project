@@ -1,0 +1,162 @@
+/*home button*/
+div.home{
+    background-color: #ffffff;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 430px;
+    box-shadow: 0 9px #999; 
+}
+
+
+/*facilities button*/
+div.facil{
+    background-color: #48AFff;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+/*about button*/
+div.about{
+    background-color: #48AFff;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-left: 10px; 
+    
+}
+
+/*support button*/
+div.sup{
+    background-color: #48AFff;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;  
+}
+
+
+
+/*dropdown button for courses*/
+.coursebtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.course {
+    position: relative;
+    display: inline;
+}
+
+.course-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 550px;
+}
+
+.course-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.course-content a:hover {background-color: #f1f1f1}
+
+.course:hover .course-content {
+    display: block;
+}
+
+.course:hover .coursebtn {
+    background-color: #3e8e41;
+}
+
+
+
+/*dropdown button for students*/
+.studentbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+
+.student {
+    position: relative;
+    display: inline;
+}
+
+.student-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 790px;
+}
+
+.student-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.student-content a:hover {background-color: #f1f1f1}
+
+.student:hover .student-content {
+    display: block;
+}
+
+.student:hover .studentbtn {
+    background-color: #3e8e41;
+}
+
+
+div.all-buttons {
+position: relative;
+z-index: 1;
+margin-top: 10px; 
+}
+
+.home:hover {background-color: #f1f1f1}
+
+.home:active {
+  
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+

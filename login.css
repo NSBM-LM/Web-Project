@@ -1,0 +1,27 @@
+p.head{
+color: rgb(7,44,169);
+font-weight: bold;
+font-size: 15px;
+font-family: serif;
+font-size: 16px;
+}
+
+input.user,input.pass{
+background-color: rgb(244,247,251);
+width: 200px;
+}
+
+input:hover{
+background-color: rgb(237,240,248);
+
+}
+
+input:active{
+background-color: rgb(237,240,248);
+}
+div.up{
+color:rgb(9,45,100);
+font-weight: bold;
+font-size: 15px;
+font-family: serif;
+}

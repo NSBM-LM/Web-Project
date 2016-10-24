@@ -1,0 +1,32 @@
+p.main{
+color: rgb(7,44,169);
+font-weight: bold;
+font-size: 15px;
+font-family: serif;
+}
+
+
+table.menu{
+font-weight: bold;
+font-size: 15px;
+font-family: serif;
+border-collapse: collapse;
+width: 17%;
+background-color:rgb(242,244,255);
+}
+
+td{
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+color:rgb(201,251,100);
+}
+
+tr:hover{
+background-color:rgb(214,222,254);
+}
+
+
+td:hover{
+color:rgb(201,251,100);
+}
